@@ -1,0 +1,36 @@
+sign in to github account
+create a new repository
+
+install git if not installed
+
+git --version
+
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+
+mkdir code
+cd code
+
+add one file to that folder
+
+git init
+git add index.html	
+git commit -m "Initial commit"
+git remote add origin https://github.com/amrtuacoder/codecode.git
+git branch -M main
+git push -u origin main
+
+
+
+if origin is already exists then git remote remove origin
+
+
+2nd
+git pull origin main
+git checkout -b feature-branch
+git add .
+git commit -m "Added a new feature"
+git push -u origin feature-branch
+git checkout main
+git merge feature-branch
+git push origin main
